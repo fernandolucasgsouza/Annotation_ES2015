@@ -9,6 +9,7 @@ function exec() {
    myFunction();
 }
 exec(); // output : Global
+
 // -----------------------------------------------------------------------------
 // Closure é o escopo criado quando uma função é declarada
 // Esse escopo permite a função acessar e manipular variávies externas à função
