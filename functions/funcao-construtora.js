@@ -29,3 +29,30 @@ ferrari.acelerar();
 ferrari.acelerar();
 ferrari.acelerar();
 ferrari.getVelocidadeAtual(); // output : 60
+
+// ----------------------------------------------------------------
+//desafio passar o modelo class Pessoa para função contrutora
+//Class
+class Pessoa {
+   constructor(nome) {
+      this.nome = nome;
+   }
+
+   falar() {
+      console.log(`Meu nome é ${this.nome}`);
+   }
+}
+
+const p1 = new Pessoa('Fenando');
+p1.falar(); // output: Meu nome é Fenando
+
+//Resp Desafios
+function PessoaContrutora(nome = '') {
+   this.falar = function () {
+      console.log(`Meu nome é ${nome}`);
+   }
+}
+const p2 = new PessoaContrutora('Gomes');
+p2.falar();
+
+// ----------------------------------------------------------------
