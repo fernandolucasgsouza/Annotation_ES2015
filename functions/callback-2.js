@@ -9,8 +9,8 @@ for (const key in notas) {
 console.log(notasBaixas); // output : [ 6.5, 5.2, 3.6 ]
 
 //com callback
-const notasBaixas2 = notas.filter(function (notas) {
-   return notas < 7;
+const notasBaixas2 = notas.filter(function (nota) {
+   return nota < 7;
 })
 console.log(notasBaixas2); // output : [ 6.5, 5.2, 3.6 ]
 
